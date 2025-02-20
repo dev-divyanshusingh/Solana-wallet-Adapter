@@ -1,5 +1,6 @@
 import './App.css';
 import { RequestAirdrop } from '../Airdrop';
+import { ShowBalance } from '../Balance';
 import React, { useMemo } from "react";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -20,6 +21,7 @@ function App() {
           <WalletMultiButton/>
           <WalletDisconnectButton/>
             <RequestAirdrop/>{/*for app component  */}
+            <ShowBalance/>
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
